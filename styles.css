@@ -1,9 +1,11 @@
 html{
-	height:100%;
+	min-height:100vh;
+	height:auto;
 }
 body{
 	display:flex;	
 	height:100%;
+	min-height:100vh;
 	flex-direction:row;
 	flex-wrap:wrap;
 	margin:0;
@@ -14,9 +16,7 @@ body{
 	background: linear-gradient(to bottom right, black, purple);
 }
 
-
 .appContainer{
-	box-sizing:border-box;
 	display:flex;
 	flex-wrap:wrap;
 	background-color:green;
@@ -24,6 +24,7 @@ body{
 	justify-content:center;
 	align-items:center;
 	height:100%;
+	min-height:80vh;
 	border: white 1px solid;
 	border-radius: 25%;
 }
@@ -36,7 +37,7 @@ body{
 	display:flex;
 	flex-wrap:wrap;
 	width:100%;
-justify-content:center;
+	justify-content:center;
 }
 .buttons{
 	display:flex;
@@ -49,8 +50,8 @@ justify-content:center;
 .buttons button{
 	width:20%;
 	border-radius:50%;
-	height:30vh;
-	width:30vh;
+	height:20vh;
+	width:20vh;
 	font-size:2em;
 	color:white;
 	background-color:blue;
@@ -60,6 +61,24 @@ justify-content:center;
 .buttons button:active{
 	background-color: white;
 	color:black;	
-
-
+}
+#timerDisplay{
+	display:flex;
+	flex-wrap:wrap;
+	min-width:70%;
+	min-height:25vh;
+	background:white;
+	justify-content:center;
+	align-items:center;
+	gap:10px;
+	border-radius:25px;
+	font-size:3em;
+	border: solid grey 3px;
+}
+.intervalDisplay{
+	display:flex;
+	width:30%;
+	justify-content:space-around;
+	align-items:center;
+	height:8vh;
 }
